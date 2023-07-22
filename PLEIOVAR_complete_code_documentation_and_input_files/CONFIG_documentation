@@ -1,0 +1,12 @@
+#---- folder with vcf files ---------------------#
+#---- folder with output for most processing ----#
+#---- number of decimals roundoff for dosages----#
+#---- number of SNPS in each microfile ----------#
+#---- number of processors ----------------------#
+#---- gene extension in KB ----------------------#
+#---- PC-SNP variance explained cutoff ----------#
+#---- MAF cutoff for PC-SNP ---------------------#
+#---- PC-trait varaince explaned cutoff ---------#
+#---- flag for variance inflation ---------------#
+#---- PC-Trait OUTPUT FOLDER --------------------#
+

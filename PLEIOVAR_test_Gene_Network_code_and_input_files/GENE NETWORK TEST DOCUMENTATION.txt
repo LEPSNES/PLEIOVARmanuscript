@@ -1,0 +1,25 @@
+
+  #***********************************************************************************************************************************************#
+  #***********************************************************************************************************************************************#
+  #--------------- THIS SCRIPT AIMS AT RUNNING ALL MAIN STEPS FOR THE SCORING OF A GIVEN GENE SET USING A GIVEN SET OF GENES ---------------------#
+  #***********************************************************************************************************************************************#
+  #***********************************************************************************************************************************************#
+
+  #------ INPUT (1): results_inflamation_biomarkers
+  #------ this file has one line per gene for all 22397 genes and it has the PLEIOVAR results for 
+  #------ inflamation biomarkers as the phenotype dataset (please see Excel Workbook in same folder)
+  #------ INPUT (2): oxygen_transport (this file has a list of 14 genes from the Gene Ontology 
+  #------ biological process and represents the most significant output from submitting 
+  #------ all 92 genes that had PLEIOVAR false discovery rate <= 0.01  
+ 
+  #------ use the program TESTCODE to run it by pasting it into the R console -----#
+
+  #------ the output will be the p-value after adjusting for variance inflation factor (VIF)---#
+  #------ Due to the very large files using all SNPS in each gene for the estimation of VIF
+  #------ we estimated VIF in our server and then adjusted for it to get the final p-value
+  #------ we also output the p-value without VIF adjustment which is expected to be 
+  #------ much smaller, specially if VIF is much larger than one (in our case it is 2.643) ----#
+
+  #------ for complete code (which estimates VIF) please see GENE_SET_PLEIOVAR_SCORING_VIF (under the folder PLEIOVAR complete - code, documentation and input files/Extra ) -----#
+  #------ although the user will not be able to estimate VIF since the SNP files for each gene of the gene set are not available, but instead, will be able to follow
+  #------ the VIF estimation part of the script which matches the description in the manuscript and which is prooved in appendix III in the Supplemental Materials Word document
